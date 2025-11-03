@@ -148,6 +148,8 @@ chmod +x "$TARGET_DIR/$BINARY_NAME"
 
 # Cleanup
 echo ""
+rm -f "$BINARY_NAME"
+make clean
 echo "Returning to script directory..."
 cd "$SCRIPT_DIR"
 
@@ -160,10 +162,10 @@ echo ""
 echo "You can now run the firmware loader with:"
 if [ "$PLATFORM" = "windows" ]; then
     echo "  cd NoLongerEvil-Thermostat/FirmwareSetup"
-    echo "  ./load_firmware.sh"
+    echo "  ./install.sh"
 else
     echo "  cd NoLongerEvil-Thermostat/FirmwareSetup"
-    echo "  sudo ./load_firmware.sh"
+    echo "  sudo ./install.sh"
 fi
 echo ""
 

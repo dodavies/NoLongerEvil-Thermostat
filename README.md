@@ -35,7 +35,7 @@ Before building, you'll need to install some required packages:
 
 ```bash
 sudo apt-get update
-sudo apt-get install build-essential libusb-1.0-0-dev
+sudo apt-get install build-essential libusb-1.0-0-dev gcc
 ```
 
 #### macOS
@@ -59,6 +59,7 @@ brew install libusb
 ### 3. Build the omap_loader tool
 
 ```bash
+chmod +x build.sh
 ./build.sh
 ```
 
@@ -71,13 +72,15 @@ The build script will automatically detect your operating system (Linux, macOS, 
 #### Linux
 
 ```bash
-sudo ./install.sh
+chmod +x install.sh
+./install.sh
 ```
 
 #### macOS
 
 ```bash
-sudo ./install.sh
+chmod +x install.sh
+./install.sh
 ```
 
 **Note for macOS:** You may need to grant USB permissions. If you encounter permission issues, check System Preferences → Security & Privacy.
