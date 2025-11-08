@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Auto-detect platform and build omap_loader
 # This script detects your OS and builds omap_loader for your platform
 
